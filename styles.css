@@ -58,7 +58,12 @@ html {
    padding-bottom: 1em;
    text-shadow: 1.8px 1.8px 1.9px rgb(0, 0, 0);
    color: rgb(223, 21, 226);
-  
+}
+.open {
+    text-align: center;
+   padding-bottom: 1em;
+   text-shadow: 1.8px 1.8px 1.9px rgb(0, 0, 0);
+   color: rgb(223, 21, 226);
 }
 .ms{
     text-align: center;
@@ -72,6 +77,13 @@ html {
     padding-top: 1em;
     color: rgb(238, 231, 20);
     text-shadow: 3.0px 3.0px 1.8px rgb(29, 2, 30);
+}
+
+.days {
+    text-align: center;
+    padding-top: 1em;
+    color: rgb(238, 231, 20);
+    text-shadow: 0.1rem 0.1rem 0.1rem rgb(29, 2, 30);
 }
 .aside {
     text-align: center;
@@ -222,7 +234,7 @@ font-weight: bolder;
     color: #22427b;
 }
 .phone {
-    transition: 0.9s ease;
+    transition: 0.6s ease;
 }
 .phone:hover {
     color: rgb(234, 13, 237);
