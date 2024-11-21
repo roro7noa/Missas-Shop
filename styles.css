@@ -43,7 +43,7 @@ html {
     font-weight: 700;
     color:rgb(238, 231, 20); 
     text-shadow: 0.16rem 0.16rem 0.13rem rgb(0, 0, 0);
-
+    
 }
 
 .nav a:hover {
@@ -53,7 +53,7 @@ html {
 .inline {
     display: flex;
     justify-content: center;
-    gap: 150px;
+    gap: 11rem;
     font-weight: bolder;
     margin-top: 2em;
     font-size: 1.8rem;
@@ -354,15 +354,3 @@ font-size: 1.8rem;
     }
 }
 
-/* Large Desktop Styles */
-@media (min-width: 1200px) {
-    .header {
-        height: 50vh; /* Increase height for large screens */
-    }
-    .nav a {
-        font-size: 2rem; /* Larger font size */
-    }
-    .inline {
-        gap: 5vw; /* Increase spacing */
-    }
-}
