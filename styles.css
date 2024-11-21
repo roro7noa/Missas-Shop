@@ -1,8 +1,9 @@
-
+@media queri {
+    
+}
 body {
     background-color: rgb(236, 236, 236);
-    font-family: cursive;
-    font-size: x-large;
+    font-family: 'Brush Script MT', cursive, sans-serif;
     height: 100%;
     margin: 0;
     padding: 0;
@@ -13,6 +14,7 @@ body {
 }
 
 html {
+    font-size: 100%;
     height: 100%;
     margin: 0;
     padding: 0;
@@ -23,14 +25,16 @@ html {
     height: 470px; 
     width: 100%;
     margin: 0;
+    font-size: 1.7rem;
 }
 
 .h1 {
     text-align: center;
     padding-top: 7%;
     margin: 0;
-    text-shadow: 2.5px 2.5px 1.8px rgb(0, 0, 0);
+    text-shadow: 0.16rem 0.16rem 0.11rem rgb(0, 0, 0);
     color: rgb(223, 21, 226);
+    font-size: 2.7rem;
 }
 .nav {
     padding: 2em 0em 3em 0em;
@@ -38,7 +42,8 @@ html {
 .nav a {
     font-weight: 700;
     color:rgb(238, 231, 20); 
-    text-shadow: 2.5px 2.5px 2px rgb(0, 0, 0);
+    text-shadow: 0.16rem 0.16rem 0.13rem rgb(0, 0, 0);
+
 }
 
 .nav a:hover {
@@ -48,35 +53,41 @@ html {
 .inline {
     display: flex;
     justify-content: center;
-    gap: 158px;
+    gap: 150px;
     font-weight: bolder;
     margin-top: 2em;
+    font-size: 1.8rem;
 }
 
 .about {
     text-align: center;
    padding-bottom: 1em;
-   text-shadow: 1.8px 1.8px 1.9px rgb(0, 0, 0);
+   text-shadow: 0.11rem 0.11rem 0.12rem rgb(0, 0, 0);
    color: rgb(223, 21, 226);
+   font-size: 2.2rem;
 }
 .open {
     text-align: center;
    padding-bottom: 1em;
-   text-shadow: 1.8px 1.8px 1.9px rgb(0, 0, 0);
+   text-shadow: 0.1125rem 0.1125rem 0.11875rem rgb(0, 0, 0);
+   font-size: 2rem;
    color: rgb(223, 21, 226);
 }
 .ms{
     text-align: center;
     padding-bottom: 3em;
-    text-shadow: 0.8px 0.8px 1.1px rgb(223, 21, 226);
-    padding-left: 25px;
-    padding-right: 25px;
+    text-shadow: 0.05rem 0.05rem 0.06875rem rgb(223, 21, 226);
+    padding-left: 1.5625rem;
+    padding-right: 1.5625rem;
+    font-size: 1.5rem;
 }
 .quiz {
     text-align: center;
     padding-top: 1em;
     color: rgb(238, 231, 20);
-    text-shadow: 3.0px 3.0px 1.8px rgb(29, 2, 30);
+    text-shadow: 0.1875rem 0.1875rem 0.1125rem rgb(29, 2, 30);
+    font-size: 2rem;
+
 }
 
 .days {
@@ -84,11 +95,13 @@ html {
     padding-top: 1em;
     color: rgb(238, 231, 20);
     text-shadow: 0.1rem 0.1rem 0.1rem rgb(29, 2, 30);
+    font-size: 1.5rem;
 }
 .aside {
     text-align: center;
     padding-bottom: 3em; 
-    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+    text-shadow: 0.125rem 0.125rem 0.1rem rgb(0, 0, 0);
+    font-size: 1.5rem;
     color: rgb(234, 215, 7);
 }
 
@@ -105,64 +118,114 @@ html {
     padding-top: 2em;
     padding-bottom: 0.7em;
     color: rgb(223, 21, 226);
-    text-shadow: 3.0px 2.0px 2.8px rgb(29, 2, 30);
+    text-shadow: 0.1875rem 0.125rem 0.175rem rgb(29, 2, 30);
+    font-size: 2.5rem;
 }
 .table {
     width: 60vw;
     margin: 0 auto;
-    border: solid rgb(223, 21, 226) 3px;
+    border: solid rgb(223, 21, 226) 0.1875rem;
     background-color: #7393c2;
-    background-image: url(Missas-Shop/images/farty.jpg);
+    background-image: url(images/farty.jpg);
     background-position: center;
     background-size: contain;
     background-position-x: 1.2em;
     background-position-y: -0.3em;
     border-radius:  2%;
 }
-td {
+.grid-container 
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 60vw;
+    margin: auto;
+    gap: 2.2rem;
+    font-size: 1.5rem;
+    padding: 3rem 3rem;
+    box-shadow: 0 0 1.1rem 0 rgb(99, 0, 146);
+    border-radius: 10%;
+}  
+ .grid-left:nth-child(4) {
+    grid-row: span 3;
+ }
+ .grid-left:nth-child(11) {
+    grid-row: span 3;
+ }
+ .grid-extra:nth-child(18) {
+    text-align: center;
+    grid-column: span 3;
+    color: rgb(234, 215, 7);
+    text-shadow: 0.1rem 0.1rem 0.09rem rgb(0, 0, 0);
+    text-align: center;
+    border: 0.25rem solid;
+    border-radius: 2rem;
+    padding: 0.6rem 0rem 0.6rem;
+    background-color: rgba(115,147,194,250);
+    box-shadow: 0 0 1.1rem 0 rgba(83, 14, 14, 0.8);
+ }
+ .grid-header {
+    color: rgb(234, 215, 7);
+    text-shadow: 0.1rem 0.1rem 0.09rem rgb(0, 0, 0);
+    text-align: center;
+    border: 0.25rem solid;
+    border-radius: 2rem; 
+    padding: 0.6rem 0rem 0.6rem;
+    background-color: rgba(115,147,194,250);
+    box-shadow: 0 0 20px 0 rgba(83, 14, 14, 0.8);
+ }
+ .grid-amount, .grid-price {
     color:rgb(234, 215, 7) ;
     text-align: center;
     background-color: rgba(115,147,194,250);
-    border: solid lightblue 0.1px;
-text-shadow: 1.5px 1.5px 1px rgb(0, 0, 0);
-border-radius: 2px ;}
-    
+    border: solid 0.09rem rgb(234, 215, 7);
+    text-shadow: 0.09375rem 0.09375rem 0.0625rem rgb(0, 0, 0);
+    border-top-left-radius: 42%;
+    border-bottom-left-radius: 42%;
+    border-top-right-radius: 10%;
+    border-bottom-right-radius: 10%;
+    box-shadow: 0 0 0.8rem 0 rgba(83, 14, 14, 0.8);
+ }
+ 
+ .grid-left {
+    color:rgb(234, 215, 7) ;
+    text-align: center;
+    background-color: rgba(115,147,194,250);
+    border: solid rgb(234, 215, 7);
+    text-shadow: 0.09375rem 0.09375rem 0.0625rem rgb(0, 0, 0);
+    margin: 2.5rem ;
+    padding-top: 1.5rem;
+    border-radius: 13%;
+    box-shadow: 0 0 1.1rem 0 rgba(83, 14, 14, 0.8)
+ }
 
-th {
-    color: rgb(223, 21, 226);
-    text-shadow: 3.0px 2.0px 1.5px rgb(0, 0, 0);
-    border: 0.1px solid;
-    border-radius: 2px ;
-}
 .back {
     text-align: center;
-    text-shadow: 0.1px 0.1px 5.1px rgb(223, 21, 226);
+    text-shadow: 0.00625rem 0.00625rem 0.31875rem rgb(223, 21, 226);
+    font-size: 1.4rem;
 }
 .back a:hover {
-    text-shadow: 0.1px 0.1px 5.1px rgb(223, 21, 226);
+    text-shadow: 0.00625rem 0.00625rem 0.31875rem rgb(223, 21, 226);
+
     color: rgb(223, 21, 226);
 }
 .coppy {
     text-align: center;
     color: #0a3072;
+    font-size: 1.2rem;
 }
 .hr {
-    margin-left: 120px;
-    margin-right: 120px;
+    margin-left: 7.5rem;
+    margin-right: 7.5rem;
 }
 a {
     text-decoration: none; 
     color: inherit;  
 }
-
-
-
-  
-
 .h2 {
     text-align: center;
     margin-top: 4em;
-    text-shadow: 2.5px 2.5px 2.3px rgb(0, 0, 0);
+    text-shadow: 0.15625rem 0.15625rem 0.14375rem rgb(0, 0, 0);
+    font-size: 2rem;
     color: rgb(223, 21, 226);
 }
 .img{
@@ -174,18 +237,20 @@ a {
   .figcall {
     padding-left: 1em;
     color: rgb(238, 9, 16);
-    text-shadow: 1.0px 1.0px 1.8px rgb(0, 0, 0);
+    text-shadow: 0.0625rem 0.0625rem 0.1125rem rgb(0, 0, 0);
+    font-size: 1.5rem;
   }
   .fieldset{
     border: none;
-    max-width: 600px;
+    max-width: 37.5rem;
     margin: auto;
     padding-top: 2em;
   }
   .label {
 display: block;
 color: rgb(238, 231, 20);
-text-shadow: 1.9px 1.9px 1.8px rgb(29, 2, 30);
+text-shadow: 0.11875rem 0.11875rem 0.1125rem rgb(29, 2, 30);
+font-size: 1.5rem;
 font-weight: bolder;
   }
   .input{
@@ -197,29 +262,28 @@ font-weight: bolder;
     color: rgb(255, 251, 3);
     background-color: rgba(115,147,194,250);
     border: none;
-    font-size: large;
-    border-radius: 6px;
-    font-weight: 480;
-    text-shadow: 1px 1px 2px #0a3072;
-  }
- 
+    font-size: 1rem;
+    border-radius: 0.375rem;
+    font-weight: 580;
+    text-shadow: 0.06rem 0.06rem 0.12rem rgb(10, 48, 114);
 
+  }
   .buttoncc {
     display: flex; 
     justify-content: center; 
-    gap: 53px;  
-    margin-top: 20px; 
+    gap: 1.9rem; 
+    margin-top: 1.25rem;
 }
 
 .button {
-    width: 370px; 
-    padding: 11px; 
-    font-size: 25px;
+    width: 23.125rem;
+    padding: 0.6875rem; 
+    font-size: 1.5625rem;
     color: rgb(241, 241, 6);
-    text-shadow: 2px 2px 1px #22427b;
+    text-shadow: 0.125rem 0.125rem 0.0625rem rgb(34, 66, 123);
     background-color: rgba(115,147,194,250);
     border: none;
-    border-radius: 6px; 
+    border-radius:0.375rem;
     text-align: center; 
 }
 .button:hover {
@@ -227,27 +291,31 @@ font-weight: bolder;
 }
 .h3 {
     color: #22427b;
-    text-shadow: 1px 1px 2px rgb(30, 129, 176);
+    text-shadow: 0.0625rem 0.0625rem 0.125rem rgb(30, 129, 176);
+
     text-decoration: underline;
 }
  .address {
     color: #22427b;
+    font-size: 1.6rem;
 }
 .phone {
     transition: 0.6s ease;
 }
 .phone:hover {
     color: rgb(234, 13, 237);
-    text-shadow: 0.5px 0.5px 1px #22427b ;
+    text-shadow: 0.03125rem 0.03125rem 0.0625rem rgb(34, 66, 123);
+
 }
 .loc {
     display: flex;
     justify-content: center;
-    gap: 190px;
+    gap: 11.875rem;
     margin-top: 7em;
+    font-size: 1.6rem;
 }
  .loc2 {
-    width: 400px;
+    width: 25rem;
     
  }
   
@@ -255,7 +323,46 @@ font-weight: bolder;
     text-align: center;
     padding-top: 1em;
     color: rgb(223, 21, 226);
-    text-shadow: 2.0px 2.0px 2.8px rgb(0, 0, 0);
+    text-shadow: 0.125rem 0.125rem 0.175rem rgb(0, 0, 0);
+font-size: 1.8rem;
     font-weight: bolder;
   }
-  
+  /* Tablet Styles */
+@media (max-width: 768px) {
+    .header {
+        height: 40vh; /* Adjust height for tablets */
+    }
+    .nav a {
+        font-size: 1.5rem; /* Scales font size */
+    }
+    .inline {
+        gap: 3vw; /* Adjust gap relative to viewport */
+    }
+}
+
+/* Mobile Styles */
+@media (max-width: 480px) {
+    .header {
+        height: 35vh; /* Smaller header for mobile */
+    }
+    .nav a {
+        font-size: 1.2rem; /* Smaller font size */
+    }
+    .inline {
+        flex-direction: column; /* Stack items */
+        gap: 2vh; /* Vertical gap */
+    }
+}
+
+/* Large Desktop Styles */
+@media (min-width: 1200px) {
+    .header {
+        height: 50vh; /* Increase height for large screens */
+    }
+    .nav a {
+        font-size: 2rem; /* Larger font size */
+    }
+    .inline {
+        gap: 5vw; /* Increase spacing */
+    }
+}
