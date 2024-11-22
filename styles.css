@@ -59,7 +59,7 @@ html {
 .inline {
     display: flex;
     justify-content: center;
-    gap: 8rem;
+    gap: 10rem;
     font-weight: bolder;
     margin-top: 2em;
     font-size: 1.8rem;
@@ -254,9 +254,10 @@ a {
   }
   .fieldset{
     border: none;
-    max-width: 37.5rem;
+    max-width: 33rem;
     margin: auto;
     padding-top: 2em;
+    padding-bottom: 1.5rem;
   }
   .label {
 display: block;
@@ -283,14 +284,14 @@ font-weight: bolder;
   .buttoncc {
     display: flex; 
     justify-content: center; 
-    gap: 1.9rem; 
+    gap: 6rem; 
     margin-top: 1.25rem;
 }
 
 .button {
     width: 22.5rem;
     padding: 0.6875rem; 
-    font-size: 1.2rem;
+    font-size: 1.7rem;
     color: rgb(241, 241, 6);
     text-shadow: 0.125rem 0.125rem 0.0625rem rgb(34, 66, 123);
     background-color: rgba(115,147,194,250);
